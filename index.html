@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Developer Portfolio — High-Converting Websites</title>
+  <meta name="description" content="Professional web developer building modern, fast, high-converting websites that grow your business." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Page Transition -->
+<div class="page-transition" id="pageTransition"></div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"  id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll To Top -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="mobile-menu-header">
+    <div class="mobile-menu-logo">M7md<span>.</span></div>
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
+  </div>
+  <nav class="mobile-nav-links" id="mobileNavLinks">
+    <a href="index.html"    data-key="navHome">Home</a>
+    <a href="#services"     data-key="navServices">Services</a>
+    <a href="#projects"     data-key="navProjects">Projects</a>
+    <a href="#reviews"      data-key="navReviews">Reviews</a>
+    <a href="#contact"      data-key="navContact">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <div class="mobile-lang-toggle">
+      <button class="mobile-lang-btn active" data-lang="en">EN</button>
+      <button class="mobile-lang-btn"        data-lang="ar">AR</button>
+    </div>
+    <a href="https://wa.me/905355798871?text=Hi%2C%20I'm%20interested%20in%20your%20web%20development%20services."
+       class="btn-mobile-cta" target="_blank" rel="noopener" data-key="navCta">
+      Start Project
+    </a>
+  </div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">M7md<span>.</span></a>
+
+  <nav class="nav-links">
+    <a href="index.html"  data-key="navHome">Home</a>
+    <a href="#services"   data-key="navServices">Services</a>
+    <a href="#projects"   data-key="navProjects">Projects</a>
+    <a href="#reviews"    data-key="navReviews">Reviews</a>
+    <a href="#contact"    data-key="navContact">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn"        data-lang="ar">AR</button>
+    </div>
+    <a href="https://wa.me/905355798871?text=Hi%2C%20I'm%20interested%20in%20your%20web%20development%20services."
+       class="btn-nav" target="_blank" rel="noopener" data-key="navCta">
+      Start Project
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="hero-inner">
+
+    <!-- LEFT: Text -->
+    <div class="hero-content">
+      <div class="hero-badge animate-in">
+        <div class="hero-badge-dot"></div>
+        <span data-key="heroBadge">Available for New Projects</span>
+      </div>
+
+      <h1 class="hero-title animate-in delay-1" id="heroTitle" data-html-key="heroTitle">
+        I Build <span class="highlight">High-Converting</span> Websites
+      </h1>
+
+      <p class="hero-subtitle animate-in delay-2" data-key="heroSubtitle">
+        Modern, fast, and designed to grow your business.
+      </p>
+
+      <div class="hero-actions animate-in delay-3">
+        <a href="#projects" class="btn-primary" data-key="heroBtnWork">
+          View My Work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/905355798871?text=Hi%2C%20I'm%20interested%20in%20starting%20a%20project."
+           class="btn-secondary" target="_blank" rel="noopener" data-key="heroBtnStart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Start Your Project
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Cinematic visual animation -->
+    <div class="hero-visual animate-in delay-2">
+
+      <!-- Spinning orbit rings -->
+      <div class="v-ring v-ring-1"></div>
+      <div class="v-ring v-ring-2"></div>
+      <div class="v-ring v-ring-3"></div>
+
+      <!-- Main browser mockup -->
+      <div class="v-browser">
+        <div class="v-browser-bar">
+          <div class="v-dots"><span></span><span></span><span></span></div>
+          <div class="v-url">m7md.dev</div>
+          <div class="v-live"><span></span>Live</div>
+        </div>
+        <div class="v-body">
+          <!-- Animated nav skeleton -->
+          <div class="v-nav-sk">
+            <div class="v-sk v-sk-logo"></div>
+            <div class="v-sk-links">
+              <div class="v-sk v-sk-link"></div>
+              <div class="v-sk v-sk-link"></div>
+              <div class="v-sk v-sk-link"></div>
+            </div>
+            <div class="v-sk v-sk-btn"></div>
+          </div>
+          <!-- Hero block -->
+          <div class="v-hero-sk">
+            <div class="v-sk v-sk-h1"></div>
+            <div class="v-sk v-sk-h2"></div>
+            <div class="v-sk v-sk-h3"></div>
+            <div class="v-sk-actions">
+              <div class="v-sk v-sk-cta"></div>
+              <div class="v-sk v-sk-cta2"></div>
+            </div>
+          </div>
+          <!-- Project cards row -->
+          <div class="v-cards-row">
+            <div class="v-card-sk"><div class="v-sk v-sk-card-img"></div><div class="v-sk v-sk-card-txt"></div></div>
+            <div class="v-card-sk"><div class="v-sk v-sk-card-img"></div><div class="v-sk v-sk-card-txt"></div></div>
+            <div class="v-card-sk"><div class="v-sk v-sk-card-img"></div><div class="v-sk v-sk-card-txt"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating stat cards -->
+      <div class="fc fc-perf">
+        <div class="fc-icon-wrap">⚡</div>
+        <div>
+          <div class="fc-label">Performance</div>
+          <div class="fc-val">98 / 100</div>
+        </div>
+      </div>
+
+      <div class="fc fc-projects">
+        <div class="fc-icon-wrap">🚀</div>
+        <div>
+          <div class="fc-label">Projects Done</div>
+          <div class="fc-val">8+</div>
+        </div>
+      </div>
+
+      <div class="fc fc-status">
+        <div class="fc-dot-live"></div>
+        <div>
+          <div class="fc-label">Status</div>
+          <div class="fc-val">Available</div>
+        </div>
+      </div>
+
+    </div><!-- /hero-visual -->
+
+  </div><!-- /hero-inner -->
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="8">0</div>
+      <div class="stat-label" data-key="statsProjects">Projects Delivered</div>
+    </div>
+    <div class="stat-item reveal stagger-1">
+      <div class="stat-number" data-target="8">0</div>
+      <div class="stat-label" data-key="statsClients">Happy Clients</div>
+    </div>
+    <div class="stat-item reveal stagger-2">
+      <div class="stat-number" data-target="100" data-suffix="%">0</div>
+      <div class="stat-label" data-key="statsSatisfaction">Client Satisfaction</div>
+    </div>
+    <div class="stat-item reveal stagger-3">
+      <div class="stat-number" data-target="3" data-suffix="+">0</div>
+      <div class="stat-label" data-key="statsYears">Years Experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section" id="services">
+  <div class="section-label reveal" data-key="svcLabel">What I Do</div>
+  <h2 class="section-title reveal" data-key="servicesTitle">Services</h2>
+  <p  class="section-subtitle reveal" data-key="servicesSubtitle">Every service is built with one goal — growing your business.</p>
+
+  <div class="services-grid">
+    <div class="service-card reveal stagger-1">
+      <div class="service-icon">🎨</div>
+      <h3 class="service-title" data-key="svc1Title">Website Design</h3>
+      <p  class="service-desc"  data-key="svc1Desc">Custom-designed websites that look stunning and convert visitors into customers.</p>
+    </div>
+    <div class="service-card reveal stagger-2">
+      <div class="service-icon">🚀</div>
+      <h3 class="service-title" data-key="svc2Title">Landing Pages</h3>
+      <p  class="service-desc"  data-key="svc2Desc">High-converting landing pages built to capture leads and drive sales.</p>
+    </div>
+    <div class="service-card reveal stagger-3">
+      <div class="service-icon">🏢</div>
+      <h3 class="service-title" data-key="svc3Title">Business Websites</h3>
+      <p  class="service-desc"  data-key="svc3Desc">Professional business websites that build credibility and generate enquiries.</p>
+    </div>
+    <div class="service-card reveal stagger-4">
+      <div class="service-icon">🛍️</div>
+      <h3 class="service-title" data-key="svc4Title">E-commerce Stores</h3>
+      <p  class="service-desc"  data-key="svc4Desc">Online stores designed to sell — with seamless checkout and great UX.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section section-alt" id="projects">
+  <div class="projects-header">
+    <div>
+      <div class="section-label reveal" data-key="projectsLabel">Featured Work</div>
+      <h2 class="section-title reveal" data-key="projectsTitle">Featured Work</h2>
+      <p  class="section-subtitle reveal" data-key="projectsSubtitle">A selection of projects I'm proud of. Each one built to deliver real results.</p>
+    </div>
+  </div>
+
+  <div class="projects-grid" id="featuredProjectsGrid">
+    <!-- Injected by JS -->
+  </div>
+
+  <div class="projects-cta reveal">
+    <a href="projects.html" class="btn-secondary" data-key="viewAllProjects">
+      View All Projects
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section class="section" id="reviews">
+  <div class="section-center">
+    <div class="section-label reveal" data-key="reviewsLabel">What Clients Say</div>
+    <h2 class="section-title reveal" data-key="reviewsTitle">Reviews</h2>
+    <p  class="section-subtitle reveal" data-key="reviewsSubtitle">Real feedback from real clients who trusted me with their business.</p>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal stagger-1">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text" data-key="review1Text">Working with this developer was the best investment I made for my gym. The website looks incredible and we got 3× more enquiries in the first month alone.</p>
+      <div class="review-author">
+        <div class="review-avatar">A</div>
+        <div>
+          <div class="review-name" data-key="review1Name">Ahmed Al-Rashid</div>
+          <div class="review-role" data-key="review1Role">Gym Owner, GYM TR</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal stagger-2">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text" data-key="review2Text">Our bookings skyrocketed after the new website launched. The design perfectly captures the premium feel we wanted for our travel packages.</p>
+      <div class="review-author">
+        <div class="review-avatar">S</div>
+        <div>
+          <div class="review-name" data-key="review2Name">Sadia Yilmaz</div>
+          <div class="review-role" data-key="review2Role">Director, Sada Tours</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card reveal stagger-3">
+      <div class="review-quote">"</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text" data-key="review3Text">Professional, fast, and the result is stunning. Our clients always compliment the website. It truly represents our brand at the highest level.</p>
+      <div class="review-author">
+        <div class="review-avatar">M</div>
+        <div>
+          <div class="review-name" data-key="review3Name">Mehmet Kaya</div>
+          <div class="review-role" data-key="review3Role">Owner, Car Turkey</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta-section section-alt" id="contact">
+  <div class="cta-glow"></div>
+  <div class="cta-content">
+    <div class="section-label reveal" style="justify-content:center;" data-key="ctaLabelHome">Let's Work Together</div>
+    <h2 class="cta-title reveal" data-key="ctaTitle">Ready to Build Something Great?</h2>
+    <p  class="cta-subtitle reveal" data-key="ctaSubtitle">Let's turn your idea into a website that works hard for your business.</p>
+    <a href="https://wa.me/905355798871?text=Hi%2C%20I'm%20interested%20in%20your%20web%20development%20services.%20Can%20we%20discuss%20my%20project%3F"
+       class="btn-whatsapp reveal" target="_blank" rel="noopener" data-key="ctaBtn">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Start Your Project on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">M7md<span>.</span></div>
+      <p class="footer-tagline" data-key="footerTagline">Building websites that grow businesses.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="index.html"   data-key="navHome">Home</a>
+      <a href="projects.html" data-key="navProjects">Projects</a>
+      <a href="#services"    data-key="navServices">Services</a>
+      <a href="#contact"     data-key="navContact">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© <span id="year"></span> Dev. <span data-key="footerRights">All rights reserved.</span></p>
+    <p class="footer-made" data-key="footerMade">Made with ♥ for results</p>
+  </div>
+</footer>
+
+<script src="js/projects-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
