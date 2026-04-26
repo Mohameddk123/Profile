@@ -21,27 +21,6 @@ const PROJECTS = [
     color: '#FF7A00'
   },
   {
-    id: 'carturkey',
-    title: 'Car Turkey',
-    category: 'Automotive',
-    categoryAr: 'سيارات',
-    shortDesc: 'A premium digital showroom for a Turkish car dealership with sophisticated design and seamless inquiry system.',
-    shortDescAr: 'صالة عرض رقمية فاخرة لوكالة سيارات تركية بتصميم راقٍ ونظام استفسار سلس.',
-    tags: ['Automotive', 'Luxury', 'Leads'],
-    tagsAr: ['سيارات', 'فاخر', 'عملاء محتملون'],
-    liveUrl: 'https://mohameddk123.github.io/Car/',
-    thumbnail: 'https://image.thum.io/get/width/800/crop/560/https://mohameddk123.github.io/Car/',
-    featured: false,
-    problem: 'The dealership needed a premium digital showroom that matched the quality of the vehicles they sell and generated qualified leads.',
-    problemAr: 'احتاجت الوكالة إلى صالة عرض رقمية فاخرة ترقى لمستوى جودة السيارات التي تبيعها وتجلب عملاء مؤهلين.',
-    solution: 'Built a sleek, dark-themed automotive website with vehicle gallery, detailed specs display, and a streamlined WhatsApp inquiry system.',
-    solutionAr: 'بنينا موقع سيارات أنيق بتصميم داكن مع معرض مركبات، وعرض مواصفات تفصيلية، ونظام استفسار مبسّط عبر واتساب.',
-    result: 'Qualified leads increased significantly and the website positioned the dealership as the premium choice in their market.',
-    resultAr: 'ارتفعت الاستفسارات المؤهلة بشكل ملحوظ وأصبح الموقع يُعرّف الوكالة باعتبارها الخيار الفاخر في سوقها.',
-    year: '2024',
-    color: '#C0A060'
-  },
-  {
     id: 'sadatours',
     title: 'Sada Tours',
     category: 'Travel & Tourism',
@@ -61,27 +40,6 @@ const PROJECTS = [
     resultAr: 'ارتفعت الحجوزات المباشرة بشكل كبير. أفاد العميل بأن الموقع "يبيع نفسه" — كانت الباقات تُحجز دون أي مكالمات هاتفية.',
     year: '2024',
     color: '#0099DD'
-  },
-  {
-    id: 'barbermah',
-    title: 'Barber Mah',
-    category: 'Beauty & Grooming',
-    categoryAr: 'حلاقة وتجميل',
-    shortDesc: 'A sleek barbershop website with service showcase and appointment flow that attracts new clients daily.',
-    shortDescAr: 'موقع صالون حلاقة أنيق يعرض الخدمات ويتيح حجز المواعيد ويجذب عملاء جدداً يومياً.',
-    tags: ['Beauty', 'Booking', 'Barbershop'],
-    tagsAr: ['تجميل', 'حجز', 'حلاقة'],
-    liveUrl: 'https://mohameddk123.github.io/Barber/',
-    thumbnail: 'https://image.thum.io/get/width/800/crop/560/https://mohameddk123.github.io/Barber/',
-    featured: false,
-    problem: 'The barbershop relied entirely on word-of-mouth and needed a professional online presence to reach a broader clientele.',
-    problemAr: 'كان الصالون يعتمد كلياً على التوصيات الشفهية واحتاج إلى حضور احترافي عبر الإنترنت للوصول إلى شريحة أوسع من العملاء.',
-    solution: 'Built a sophisticated, dark-themed website showcasing services, pricing, and ambience — with an easy WhatsApp appointment system.',
-    solutionAr: 'بنينا موقعاً راقياً بتصميم داكن يعرض الخدمات والأسعار والأجواء — مع نظام حجز مواعيد سهل عبر واتساب.',
-    result: 'New client bookings increased noticeably, with many customers citing the website as the reason they chose this barbershop over competitors.',
-    resultAr: 'ارتفعت حجوزات العملاء الجدد بشكل ملحوظ، وأشار كثير منهم إلى الموقع كسبب اختيارهم هذا الصالون دون المنافسين.',
-    year: '2024',
-    color: '#8B6914'
   },
   {
     id: 'menzahbellota',
@@ -126,27 +84,6 @@ const PROJECTS = [
     color: '#E63A1E'
   },
   {
-    id: 'peetshoop',
-    title: "Peet's Shop",
-    category: 'E-commerce & Retail',
-    categoryAr: 'تجارة إلكترونية وتجزئة',
-    shortDesc: 'A friendly pet shop website with product catalog and delightful UX that keeps pet owners coming back.',
-    shortDescAr: 'موقع متجر حيوانات أليفة ودود مع كتالوج منتجات وتجربة مستخدم رائعة تجعل أصحاب الحيوانات يعودون دائماً.',
-    tags: ['E-commerce', 'Retail', 'Pet Shop'],
-    tagsAr: ['تجارة إلكترونية', 'تجزئة', 'حيوانات أليفة'],
-    liveUrl: 'https://mohameddk123.github.io/pet/',
-    thumbnail: 'https://image.thum.io/get/width/800/crop/560/https://mohameddk123.github.io/pet/',
-    featured: false,
-    problem: 'The pet shop needed an online presence to showcase their products and reach pet owners beyond their local neighbourhood.',
-    problemAr: 'احتاج المتجر إلى حضور إلكتروني لعرض منتجاته والوصول إلى أصحاب الحيوانات خارج حيّهم المحلي.',
-    solution: 'Designed a warm, friendly website with a full product catalog, category filtering, and easy contact system for orders.',
-    solutionAr: 'صممنا موقعاً دافئاً وودياً مع كتالوج منتجات كامل، وتصفية حسب الفئة، ونظام تواصل سهل للطلبات.',
-    result: 'Expanded the customer base and created a new revenue channel — customers now come from outside the local area.',
-    resultAr: 'توسّعت قاعدة العملاء وتأسّست قناة إيرادات جديدة — أصبح العملاء يأتون من خارج المنطقة المحلية.',
-    year: '2024',
-    color: '#4CAF50'
-  },
-  {
     id: 'aqqar',
     title: 'Aqqar',
     category: 'Real Estate',
@@ -167,27 +104,6 @@ const PROJECTS = [
     year: '2025',
     color: '#2E7D32'
   },
-  {
-    id: 'houseofsweets',
-    title: 'House of Sweets',
-    category: 'Food & Bakery',
-    categoryAr: 'حلويات ومخبوزات',
-    shortDesc: 'A mouthwatering bakery website with stunning pastry showcases that turns visitors into loyal, repeat customers.',
-    shortDescAr: 'موقع مخبز يُسيل اللعاب مع عروض حلويات مذهلة يحوّل الزوار إلى عملاء مخلصين ومتكررين.',
-    tags: ['Bakery', 'Food', 'Branding'],
-    tagsAr: ['مخبوزات', 'طعام', 'هوية بصرية'],
-    liveUrl: 'https://mohameddk123.github.io/Cake/',
-    thumbnail: 'https://image.thum.io/get/width/800/crop/560/https://mohameddk123.github.io/Cake/',
-    featured: false,
-    problem: 'The bakery relied on social media but needed a professional website to build credibility and drive custom orders.',
-    problemAr: 'كان المخبز يعتمد على وسائل التواصل الاجتماعي لكنه احتاج إلى موقع احترافي لبناء المصداقية وزيادة الطلبات المخصصة.',
-    solution: 'Created a visually stunning bakery website with product galleries, custom order system, and brand storytelling that builds trust.',
-    solutionAr: 'أنشأنا موقع مخبز بديعاً بصرياً مع معارض منتجات، ونظام طلبات مخصص، وقصة علامة تجارية تبني الثقة.',
-    result: 'Custom orders increased significantly through website contact. The professional presence also attracted wholesale inquiries.',
-    resultAr: 'ارتفعت الطلبات المخصصة بشكل ملحوظ عبر موقع التواصل. كما استقطب الحضور الاحترافي استفسارات بيع بالجملة.',
-    year: '2024',
-    color: '#F48FB1'
-  }
 ];
 
 const FEATURED_PROJECTS = PROJECTS.filter(p => p.featured);
