@@ -84,6 +84,27 @@ const PROJECTS = [
     color: '#E63A1E'
   },
   {
+    id: 'cake',
+    title: 'House of Sweets',
+    category: 'Bakery & Desserts',
+    categoryAr: 'مخبوزات وحلويات',
+    shortDesc: 'A luxury dessert brand website that turns sweet cravings into WhatsApp orders with elegant visuals and curated packages.',
+    shortDescAr: 'موقع علامة حلويات فاخرة يحوّل الرغبات إلى طلبات واتساب بمرئيات أنيقة وباقات منتقاة بعناية.',
+    tags: ['Bakery', 'Desserts', 'E-commerce'],
+    tagsAr: ['مخبوزات', 'حلويات', 'تجارة إلكترونية'],
+    liveUrl: 'https://mohameddk123.github.io/Cake/',
+    thumbnail: 'https://image.thum.io/get/width/800/crop/560/https://mohameddk123.github.io/Cake/',
+    featured: false,
+    problem: 'The artisanal dessert brand needed a website that conveyed the luxury and craftsmanship of their handmade baked goods and drove direct WhatsApp orders.',
+    problemAr: 'احتاجت علامة الحلويات الحرفية إلى موقع يعكس فخامة ومهارة منتجاتها المصنوعة يدوياً ويدفع الطلبات المباشرة عبر واتساب.',
+    solution: 'Designed an elegant, appetizing website with curated package showcases (tarts, cupcakes, biscuits), a gallery, customer reviews, and a seamless WhatsApp ordering system.',
+    solutionAr: 'صممنا موقعاً أنيقاً ومشهياً مع عرض باقات منتقاة (تارت، كب كيك، بسكويت)، معرض صور، تقييمات العملاء، ونظام طلب سلس عبر واتساب.',
+    result: 'The brand established a strong digital presence. Customers reported the website made ordering feel premium and effortless, leading to repeat purchases.',
+    resultAr: 'رسّخت العلامة حضورها الرقمي بقوة. أفاد العملاء بأن الموقع جعل تجربة الطلب تبدو فاخرة وسلسة، مما أدى إلى عمليات شراء متكررة.',
+    year: '2025',
+    color: '#D4517A'
+  },
+  {
     id: 'aqqar',
     title: 'Aqqar',
     category: 'Real Estate',
